@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".main.ScoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/header_title">
+            <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_logo_solo_a"/>
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/header_title"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:id="@+id/scoreTitle"
+                android:textSize="25dp"
+                android:textColor="@color/ligth_orange"
+                android:text="This is your score history:"/>
+        <ImageButton
+                android:layout_width="30dp"
+                android:layout_below="@+id/header_title"
+                android:src="@drawable/ic_reload"
+                android:id="@+id/sfRelodeButton"
+                android:background="@color/ligth_orange"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toStartOf="@+id/scoreTitle"
+                android:layout_height="30dp"/>
+        <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:stretchColumns="*"
+                android:id="@+id/sfScoreTable"
+                android:layout_below="@+id/scoreTitle">
+            <TableRow android:id="@+id/scoreTitleHeaders">
+                <TextView
+                        android:text="Score"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@color/ligth_orange"/>
+                <TextView
+                        android:text="Date"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:background="@color/ligth_orange"/>
+                <TextView
+                        android:text="Hour"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:background="@color/ligth_orange"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
